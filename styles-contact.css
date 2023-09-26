@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87CEEB;
+    display: grid;
+    grid-template-areas: 
+                "header nav nav"
+                "main main main"
+                "foot foot foot";
+    grid-row-gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    width: 95%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    width: 30%;
+    background-color: #00afef;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+header {
+    grid-area: header;
+    display: inline-flex;
+    font-weight: 800;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+header h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+main {
+    grid-area: main;
+}
+
+main, section, footer {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.store-button { /* used for store link in "Get refreshed" section */
+    width: 30%;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #00afef;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+form input, select {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 70%;
+    padding: 8px;
+}
+
+#color-input {
+    width: 70%;
+}
+
+#feedback-input {
+    height: 20vh;
+    resize: none;
+    padding: 5px;
+}
+
+footer {
+    grid-area: foot;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    body {
+        grid-template-areas: 
+                    "header"
+                    "nav"
+                    "main"
+                    "foot";
+    }
+
+    nav ul {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        font-size: 4vw;
+    }
+    
+    form {
+        width: 100%;
+    }
+
+    .input {
+        width: 95%;
+        padding: 8px;
+    }
+    
+    #color-input {
+        width: 100%;
+    }
+}

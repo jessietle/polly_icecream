@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles-contact.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/blue-pop.png" />
+      <h1>Fred's Frozen Pops</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>HOME</li>
+        <li>STORE</li>
+        <li>CONTACT US</li>
+      </ul>
+    </nav>
+
+    <main>
+      <h3>Contact Us</h3>
+      <form>
+        <label for="text-input">Name:</label>
+        <input
+          class="input"
+          type="text"
+          name="text-input"
+        />
+
+        <label for="dropdown">How did you hear of us?</label>
+        <select class="input" name="dropdown">
+          <option value="option1">Pops Monthly</option>
+          <option value="option2">Internet</option>
+          <option value="option3">Friends</option>
+        </select>
+
+        <label for="color-input">What color is your favorite frozen pop?</label>
+        <input
+          type="color"
+          id="color-input"
+          name="color-input"
+          value="#00afef"
+        />
+
+        <label for="feedback-text-input">Please let us know any comments you have:</label>
+        <textarea
+          id="feedback-input"
+          name="feedback-text-input"></textarea>
+
+        <input class="store-button" type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2022. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
